@@ -2,6 +2,5 @@
 
 ## </code16> UI Login ve Sign Up Page Ödevi:
 
-![Login Page](./assets/Sally1.png)
-
-![Sign Up Page](./assets/Sally2.png)
+<img src="./assets/Sally1.png" alt="Login Page" width="200" height= '350'/>
+<img src="./assets/Sally2.png" alt="Sign Up Page" width="200" height= '350'/>
