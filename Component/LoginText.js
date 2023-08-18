@@ -3,9 +3,9 @@ import React, { useState } from 'react'
 import Username from '../Image/Icon/Username'
 import Password from '../Image/Icon/Password'
 
-const LoginText = () => {
-    const [text, setText] = useState('johnsondoe@nomail.com')
-    const [password, setPassword] = useState('*************')
+const LoginText = ({email, passwordd}) => {
+    const [text, setText] = useState('')
+    const [password, setPassword] = useState('')
     return (
         <View>
             <View style={styles.textinput}>
@@ -14,6 +14,7 @@ const LoginText = () => {
                     value={text}
                     onChangeText={setText}
                     style={styles.inputTextName}
+                    placeholder={email}
                 />
             </View>
             <View style={styles.textinput}>
@@ -22,6 +23,7 @@ const LoginText = () => {
                     value={password}
                     onChangeText={setPassword}
                     style={styles.inputTextName}
+                    placeholder={passwordd}
                 />
             </View>
         </View>

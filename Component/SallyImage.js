@@ -10,6 +10,7 @@ const SallyImage = () => {
   )
 }
 
+
 export default SallyImage
 
 const styles = StyleSheet.create({

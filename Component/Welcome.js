@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const Welcome = () => {
+const Welcome = ({welcome, logIn}) => {
   return (
    <View>
-    <Text style={styles.header}>Welcome Back!</Text>
-    <Text style={styles.title}>Please, Log In.</Text>
+    <Text style={styles.header}>{welcome}</Text>
+    <Text style={styles.title}>{logIn}</Text>
    </View>
  );
 }

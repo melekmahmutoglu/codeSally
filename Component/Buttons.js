@@ -1,22 +1,20 @@
 import { StyleSheet, Text, View, Button, TouchableOpacity,} from 'react-native'
 import React from 'react'
 
-
-const Buttons = () => {
-    const continueName = 'Continue >';
-    const dashed = '----------------------- Or -----------------------'
+const Buttons = ({createAccount, continueName, buttonColor, onPress}) => {
+    const dashed = '----------------------- Or -----------------------'  
   return (
    <View>
      <TouchableOpacity
-     style={styles.buttonContainer}
+     style={[styles.buttonContainer, {backgroundColor: buttonColor} ]}
      onPress={()=>{}}>
-        <Text style={styles.continue}>{continueName}</Text>
+        <Text style={[styles.continue ]}>{continueName}</Text>
      </TouchableOpacity>
     <Text style={styles.dashed}>{dashed}</Text>
      <TouchableOpacity
      style={styles.buttonContainerSign}
-     onPress={() => {}}>
-        <Text style={styles.continue}>Create an Account</Text>
+     onPress={onPress}>
+        <Text style={styles.continue}>{createAccount}</Text>
      </TouchableOpacity>
    </View>
   )
@@ -29,6 +27,16 @@ const styles = StyleSheet.create({
         width: 342,
         height: 70,
         backgroundColor: '#78258b',
+        borderRadius: 37,
+        marginLeft: 40,
+        justifyContent: 'center',
+        alignContent: 'center'
+        
+    },
+    buttonContainer:{
+        width: 342,
+        height: 70,
+        backgroundColor: '#52439A',
         borderRadius: 37,
         marginLeft: 40,
         justifyContent: 'center',
